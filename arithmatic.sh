@@ -1,9 +1,11 @@
 #!/bin/bash -x
+##Read values from dictionary and sort in decending order
+##Read input from user
 echo "Arithmetic Computation & sorting "
 read -p "Enter First Number : " a
 read -p "Enter second Number : " b
 read -p "Enter third Number:" c
-
+##computation
 sum=$(($a+($b*$c)))
 echo $sum
 
@@ -15,7 +17,7 @@ echo $sum2
 
 sum3=$((($a%$b)+$c))
 echo $sum3
- 
+ ##declare dictionary
 declare -A dict
 
 dict[1]=`echo $sum`
@@ -30,7 +32,7 @@ do
 done
 arrLength=${#valsInArr[@]}
 
-
+##sorting
 for (( i = 0 ; i <= $(( $arrLength - 1 )) ; i++ ))
 do
 	for (( j = 0 ; j < $i ;j++ ))
