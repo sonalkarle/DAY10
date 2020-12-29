@@ -1,5 +1,5 @@
 #!/bin/bash -x
-##Read the values from dictionary into array and sort in decending 
+##Read the values from dictionary 
 ##Read the input from user
 echo "Arithmetic Computation & sorting "
 read -p "Enter First Number : " a
